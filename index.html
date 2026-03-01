@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gökyüzü Kaşifi - Platform Oyunu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel">
+        <h1>Gökyüzü Kaşifi</h1>
+        <p>
+          Hareket: <kbd>A</kbd>/<kbd>D</kbd> veya <kbd>←</kbd>/<kbd>→</kbd> — Zıpla:
+          <kbd>W</kbd>, <kbd>↑</kbd> veya <kbd>Boşluk</kbd>
+        </p>
+        <p class="objective">Amaç: Tüm kristalleri topla ve portala ulaş.</p>
+        <div class="stats">
+          <span id="coinCounter">Kristaller: 0/0</span>
+          <span id="status">Durum: Hazır</span>
+        </div>
+        <button id="restartButton" type="button">Yeniden Başlat</button>
+      </section>
+      <canvas id="gameCanvas" width="960" height="540" aria-label="Platform oyunu"></canvas>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
